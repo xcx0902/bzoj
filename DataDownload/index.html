@@ -16,7 +16,7 @@
 					<label class="mdui-textfield-label">题目ID</label>
 					<input class="mdui-textfield-input" id="id" name="id" type="text" required="required">
 				</div>
-				<button class="mdui-btn mdui-btn-raised mdui-ripple" id="go" onclick="g1();">跳转到题目</button>
+				<!---<button class="mdui-btn mdui-btn-raised mdui-ripple" id="go" onclick="g1();">跳转到题目</button>--->
 				<button class="mdui-btn mdui-btn-raised mdui-ripple" id="go" onclick="g2();">下载数据</button>
 				<p></p>
 				<script>
@@ -39,7 +39,7 @@
 						if ((e.keyCode || e.which) == 13){
 							var val = document.getElementById('id').value;
 							if (val < 1000 || val > 4999) mdui.snackbar({message: '请输入1000-4999之间的数字',position: 'top'});
-							else{g1();}
+							else{g2();}
 						}
 					}
 				</script>
